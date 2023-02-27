@@ -2,8 +2,8 @@
 
 body{
    font-family: 'Open Sans',serif;
-   --primary-color:
-   --secondary-color: 
+   /*will be added soon --primary-color:
+   --secondary-color:*/
 }
   
   ul li {
@@ -29,7 +29,6 @@ nav {
 
   .logo {
     font-size: 18px;
-    /*margin-left: 122px;*/
   }
   
 
@@ -54,15 +53,17 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0 2rem;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  /* align-content: flex-end; */
   font-size: 40px;
-  /*argin-left: 122px;*/
-  flex-basis: 30%; 
+  flex-basis: 20%;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .responsive {
@@ -85,15 +86,15 @@ nav {
 }
 
 /*tablet styles*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
     align-items: center;
   }
 }
 
-/*phone styles*/
-@media screen and (max-width: 700px) {
+/*mobile styles*/
+@media screen and (max-width: 480px) {
   navigation {
     justify-content: space-between;
   }
@@ -108,7 +109,7 @@ nav {
 
 
 
-/*Contact*/
+/*Contact page*/
 
 .Contact-info {
 text-align: center;
@@ -128,7 +129,7 @@ text-align: center;
   padding-left: 50px;
 }
 
-/*About*/
+/*About page*/
 
 .about {
   margin: auto;
@@ -136,7 +137,7 @@ text-align: center;
 }
 
 /*tablet styles*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .about {
     width: 50%;
     margin: auto;
